@@ -37,3 +37,6 @@ def predict():
         prediction = "you will not win the election given these circumstances"
         return  prediction
     return render_template('index.html', pred=prediction)
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", port=config.PORT, debug=config.DEBUG_MODE)
